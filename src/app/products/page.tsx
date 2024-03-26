@@ -1,24 +1,90 @@
-import { products } from "@/utils/fakeDb"
-import ProductCard from "@/components/atoms/ProductCard"
+'use client'
+import { useEffect } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Products = () => {
-  return (
-    <div className="mt-10">
-      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 text-white">
-        <h2 id="products-heading" className="sr-only">
-          Products
-        </h2>
+  useEffect(() => {
+    // Get all panels
+    const panels = document.querySelectorAll(".panel");
 
-        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-          {products.map((product) => (
-            <a key={product.id} href={product.href} className="group">
-              <ProductCard product={product}/>
-            </a>
-          ))}
+    // Loop through each panel
+    panels.forEach((panel, index) => {
+      // Create a timeline for each panel
+      const timeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: panel,
+          start: "top center",
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      // Animate the panel's position
+      timeline.fromTo(
+        panel,
+        { xPercent: 100 },
+        { xPercent: 0, duration: 1, ease: "power2.out" }
+      );
+    });
+  }, []);
+
+  return (
+    <div className="container">
+      <div className="description panel blue">
+        <div>
+          <h1>Horizontal snapping sections (simple)</h1>
+          <p>
+            Scroll vertically to scrub the horizontal animation. It also
+            dynamically snaps to the sections in an organic way based on the
+            velocity. The snapping occurs based on the natural ending position
+            after momentum is applied, not a simplistic "wherever it is when
+            the user stops".
+          </p>
+          <div className="scroll-down">
+            Scroll down<div className="arrow"></div>
+          </div>
         </div>
       </div>
-    </div>
-  )
-}
 
-export default Products
+      <div className="panel red">
+        <img
+          src="https://assets-global.website-files.com/637404ee09bc310b8286e675/6452e6fd4f4e416745f2a454_20230307_AUTHORNE_CAMPAIGN_14648%20copy.jpg"
+          alt="Image 1"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="panel orange">
+        <img
+          src="https://assets-global.website-files.com/637404ee09bc310b8286e675/6452e6fd4f4e416745f2a454_20230307_AUTHORNE_CAMPAIGN_14648%20copy.jpg"
+          alt="Image 2"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="panel purple">
+        <img
+          src="https://assets-global.website-files.com/637404ee09bc310b8286e675/6452e6fd4f4e416745f2a454_20230307_AUTHORNE_CAMPAIGN_14648%20copy.jpg"
+          alt="Image 3"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="panel green">
+        <img
+          src="https://assets-global.website-files.com/637404ee09bc310b8286e675/6452e6fd4f4e416745f2a454_20230307_AUTHORNE_CAMPAIGN_14648%20copy.jpg"
+          alt="Image 4"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="panel gray">
+        <img
+          src="https://assets-global.website-files.com/637404ee09bc310b8286e675/6452e6fd4f4e416745f2a454_20230307_AUTHORNE_CAMPAIGN_14648%20copy.jpg"
+          alt="Image 5"
+          className="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default Products;
