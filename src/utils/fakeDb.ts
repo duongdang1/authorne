@@ -1,11 +1,11 @@
 export const products = [
   {
     id: 1,
-    name: 'Focus Paper Refill',
+    name: 'Guardian Necklace',
     href: '#',
     price: '$13',
-    description: '3 sizes available',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-01-image-card-01.jpg',
+    description: 'Two lions head pendants, representing the East and West, stand in polar unison as they sit high on one’s collarbone, delicately affixed to a double Mother Chain',
+    imageSrc: 'https://assets-global.website-files.com/637404ee09bc310b8286e675/6452e6fd4f4e416745f2a454_20230307_AUTHORNE_CAMPAIGN_14648%20copy.jpg',
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
@@ -14,7 +14,7 @@ export const products = [
     href: '#',
     price: '$64',
     description: 'Walnut',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-01-image-card-02.jpg',
+    imageSrc: 'https://assets-global.website-files.com/637404ee09bc310b8286e675/6452e6a4138d0d1005ba914d_20230307_AUTHORNE_CAMPAIGN_42210%20copy.jpg',
     imageAlt: 'Paper card sitting upright in walnut card holder on desk.',
   },
   {
@@ -23,7 +23,7 @@ export const products = [
     href: '#',
     price: '$32',
     description: 'Heather Gray',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-01-image-card-03.jpg',
+    imageSrc: 'https://assets-global.website-files.com/637404ee09bc310b8286e675/6452e6fd4f4e416745f2a454_20230307_AUTHORNE_CAMPAIGN_14648%20copy.jpg',
     imageAlt: 'Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.',
   },
   {
@@ -32,7 +32,7 @@ export const products = [
     href: '#',
     price: '$13',
     description: '3 sizes available',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-01-image-card-01.jpg',
+    imageSrc: 'https://assets-global.website-files.com/637404ee09bc310b8286e675/6452e6fd4f4e416745f2a454_20230307_AUTHORNE_CAMPAIGN_14648%20copy.jpg',
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
@@ -41,7 +41,7 @@ export const products = [
     href: '#',
     price: '$64',
     description: 'Walnut',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-01-image-card-02.jpg',
+    imageSrc: 'https://assets-global.website-files.com/637404ee09bc310b8286e675/6452e6fd4f4e416745f2a454_20230307_AUTHORNE_CAMPAIGN_14648%20copy.jpg',
     imageAlt: 'Paper card sitting upright in walnut card holder on desk.',
   },
   {
@@ -50,7 +50,7 @@ export const products = [
     href: '#',
     price: '$32',
     description: 'Heather Gray',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-01-image-card-03.jpg',
+    imageSrc: 'https://assets-global.website-files.com/637404ee09bc310b8286e675/6452e6fd4f4e416745f2a454_20230307_AUTHORNE_CAMPAIGN_14648%20copy.jpg',
     imageAlt: 'Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.',
   },
 ]
