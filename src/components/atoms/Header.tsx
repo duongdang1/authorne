@@ -9,7 +9,7 @@ import {
 
 const navigation = [
   { name: 'Products', href: '/products' },
-  { name: 'Features', href: '#' },
+  { name: 'Features', href: '/features' },
   { name: 'Marketplace', href: '#' },
   { name: 'Company', href: '#' },
 ]
